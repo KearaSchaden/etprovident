@@ -1,0 +1,33 @@
+{
+  "name": "etprovident",
+  "version": "1.0.0",
+  "description": "A collection of common types for TypeScript along with dynamic type cast methods.",
+  "main": "cjs/index.js",
+  "module": "mjs/index.mjs",
+  "types": "mjs/index.d.ts",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "lint": "eslint",
+    "build": "rollup -c && cp ./package.json ./dist/package.json && cp ./README.md ./dist/README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KearaSchaden/etprovident.git"
+  },
+  "author": "JerrySchimmel",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.10.0",
+    "jest": "^26.5.0",
+    "rollup": "^2.32.0",
+    "rollup-plugin-typescript2": "^0.28.0",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.1.2"
+  },
+  "bugs": {
+    "url": "https://github.com/KearaSchaden/etprovident.git/issues"
+  }
+}
